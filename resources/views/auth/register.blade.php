@@ -14,7 +14,7 @@
     <meta property="og:title" content="{{ $seo_info->title }}"/>
     <meta property="og:type" content="Ecommerce Site"/>
     <meta property="og:url" content="{{ url('register') }}"/>
-    <meta property="og:image" content="{{ 'https://res.cloudinary.com/htcompany-cloud/image/upload/'.$seo_info->meta_image.'.jpg' }}"/>
+    <meta property="og:image" content="{{ 'https://res.cloudinary.com/ditgrfuov/image/upload/'.$seo_info->meta_image.'.jpg' }}"/>
     <meta property="og:description" content="{{ $seo_info->description }}"/>
 
 @endsection

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 @yield('meta')
-<link rel="shortcut icon" href="{{ 'https://res.cloudinary.com/htcompany-cloud/image/upload/'.$shop_info->favicon.'.jpg' }}"/>
+<link rel="shortcut icon" href="{{ 'https://res.cloudinary.com/ditgrfuov/image/upload/'.$shop_info->favicon.'.jpg' }}"/>
 <title>@yield('title',$shop_info->shop_name)</title>
 
 <!--bootstrap css-->

@@ -12,7 +12,7 @@
     <meta property="og:type" content="Ecommerce Site"/>
     <meta property="og:url" content="{{ url('/') }}"/>
 
-    <meta property="og:image" content="{{ 'https://res.cloudinary.com/htcompany-cloud/image/upload/'.$seo_info->meta_image.'.jpg' }}"/>
+    <meta property="og:image" content="{{ 'https://res.cloudinary.com/ditgrfuov/image/upload/'.$seo_info->meta_image.'.jpg' }}"/>
 
 
 @endsection

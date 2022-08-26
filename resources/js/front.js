@@ -24,7 +24,7 @@ Vue.use(VueLazyload, {
 
 Vue.use(Cloudinary, {
     configuration: {
-        cloudName: 'htcompany-cloud',
+        cloudName: 'ditgrfuov',
         secure: true
     },
     components: [
