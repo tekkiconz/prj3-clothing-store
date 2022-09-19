@@ -33,9 +33,9 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        if (App::environment(['production'])) {
-            resolve(UrlGenerator::class)->forceScheme('https');
-        }
+        // if (App::environment(['production'])) {
+        //     resolve(UrlGenerator::class)->forceScheme('https');
+        // }
 
         parent::boot();
     }
@@ -69,12 +69,56 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
 
+        // product route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/product.php'));
+
+        // offer route
+
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/offers.php'));
+
+        // settings  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/settings.php'));
+
+        // admin  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/admin.php'));
+
+        // order  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/order.php'));
+
+        // cart  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/cart.php'));
+
+        // customer  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/customer.php'));
+
+        // Report  route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/report.php'));
 
         // user profile  route
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/user.php'));
 
+        // payment related route
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/payment.php'));
     }
 
     /**

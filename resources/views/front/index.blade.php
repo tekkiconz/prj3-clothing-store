@@ -18,6 +18,29 @@
 @endsection
 @section('content')
 
+    <!-- home slider from js  -->
+    <home-slider></home-slider>
+    <!-- home slider from js  -->
+
+    <!-- home category from js  -->
+    <home-category></home-category>
+
+    <!-- home category from js  -->
+
+    <!--  end category-->
+
+    <!--start banner-->
+    <div class="container">
+        <home-offers></home-offers>
+    </div>
+    <!--end banner-->
+
+    <!--  start hot deal -->
+    @php
+        $currency = getCurrentCurrency();
+    @endphp
+    <hot-deal :currency="{{ $currency }}"></hot-deal>
+    <!--  end   hot deal -->
 @endsection
 
 @push('script')
